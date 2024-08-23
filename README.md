@@ -33,8 +33,6 @@ All I did here was replace `shielded = True` with `shielded = False` everywhere 
 * `parts replaced undocked shielded parts.txt` - a list of the parts, by index and name, that had `shielded = True` on the explorer when the undocked save was made. 
 * `parts replaced docked shielded parts.txt` - a list of the parts, by index and name, that had `shielded = True` on the explorer when the docked save was made. Note that no parts on the lander were shielded when the game was saved undocked, but when docked the number of shielded parts went from 46 to 65, so 19 parts (out of 43) on the lander became shielded.
 
-# Latest Experiments and Results
-
 This was the most aggressive edit. I created new versions of the crafts (the "No Fairings" and separate lander ones, referenced above). I then created saved games with each on the landing pad and ran code that took the list of parts from each and replaced the part lists from the vessels in the `Baseline Undocked` save with the parts list from the launchpad. In these new crafts all fairings were removed from the explorer and the lander was modified so the docking port was not the root.  There was also a small difference in that the magnetometer, while still attached to the same parent part (the science lab) was in the location I'd originally planned for it. I'd moved earlier after encountering this (or a similar) stowage issue and thought it might have just been cramped.
 
 For this run, after loading the edit I was again able to extend and retract the dock, including after saving and reloading the `Part Replacement Undocked Save` file. But in a deviation from the prior experiment, this time I was unable to extended the magnetometer after docking even without the save/reload cycle.
